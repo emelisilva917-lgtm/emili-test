@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flor CSS</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#87ceeb;
+}
+
+/* Flor */
+.flor{
+    position:relative;
+    width:500px;
+    height:350px;
+}
+
+/* Centro */
+.centro{
+    position:absolute;
+    width:50px;
+    height:50px;
+    background:#ffcc00;
+    border-radius:50%;
+    top:75px;
+    left:75px;
+    z-index:2;
+}
+
+/* Pétalas */
+.petala{
+    position:absolute;
+    width:70px;
+    height:70px;
+    background-color:#ff0080;
+    border-radius:50%;
+    top:65px;
+    left:65px;
+}
+
+.p1{ transform:translate(0,-50px); }
+.p2{ transform:translate(43px,-25px); }
+.p3{ transform:translate(43px,25px); }
+.p4{ transform:translate(0,50px); }
+.p5{ transform:translate(-43px,25px); }
+.p6{ transform:translate(-43px,-25px); }
+
+/* Caule */
+.caule{
+    position:absolute;
+    width:12px;
+    height:180px;
+    background:rgb(29, 110, 29);
+    top:120px;
+    left:94px;
+    border-radius:10px;
+}
+
+/* Folha */
+.folha{
+    position:absolute;
+    width:60px;
+    height:30px;
+    background:#05682e;
+    border-radius:0 100% 0 100%;
+    top:200px;
+    left:100px;
+    transform:rotate(25deg);
+}
+</style>
+</head>
+<body>
+
+<div class="flor">
+    <div class="petala p1"></div>
+    <div class="petala p2"></div>
+    <div class="petala p3"></div>
+    <div class="petala p4"></div>
+    <div class="petala p5"></div>
+    <div class="petala p6"></div>
+
+    <div class="centro"></div>
+    <div class="caule"></div>
+    <div class="folha"></div>
+</div>
+
+
+</body>
+</html>
+
